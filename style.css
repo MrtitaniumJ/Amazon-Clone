@@ -151,7 +151,7 @@ span {
 
 .hero-msg {
     background-color: white;
-    color: black;
+    color: #0F1111;
     height: 40px;
     display: flex;
     align-items: center;
@@ -163,6 +163,10 @@ span {
 
 .hero-msg a {
     color: #007185;
+}
+
+.hero-msg a:hover {
+    color: rgb(211, 70, 18);
 }
 
 /* shop section */
@@ -196,7 +200,7 @@ span {
 }
 
 .box-items {
-    height: 250px;
+    height: 275px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: auto;
@@ -227,7 +231,7 @@ span {
 /* category-box end */
 
 .box-img {
-    height: 250px;
+    height: 275px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -239,11 +243,23 @@ span {
 }
 
 .box-content h2 {
-    font-size: 21px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #0F1111;
 }
 
 .box-content p {
+    margin-top: 25px;
+    font-size: 13px!important;
+}
+
+.box-content a {
     color: #007185;
+    text-decoration: none;
+}
+
+.box-content a:hover {
+    color: rgb(211, 70, 18);
 }
 
 /* footer */
@@ -352,3 +368,142 @@ ul a {
 .copyright {
     padding-top: 5px;
 }
+
+
+/* Add the following code at the end of your CSS */
+
+/* Responsive Styles */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    .navbar {
+      flex-wrap: wrap;
+      padding: 10px;
+      height: auto;
+    }
+    
+    .nav-logo {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    
+    .navbar .border {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .navbar .add-first {
+      font-size: 0.7rem;
+    }
+    
+    .navbar .add-sec {
+      font-size: 0.85rem;
+    }
+    
+    .nav-search {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .nav-search input {
+      font-size: 0.9rem;
+    }
+    
+    .search-select,
+    .search-icon {
+      border-radius: 0;
+    }
+    
+    .search-input {
+      border-radius: 0;
+      padding: 8px;
+    }
+    
+    .hero-section {
+      height: 200px;
+    }
+    
+    .box,
+    .category-box {
+      width: 95%;
+    }
+  }
+  
+  /* Medium devices (between 577px and 992px) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    .navbar {
+      justify-content: space-between;
+    }
+    
+    .navbar .border {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .navbar .add-first {
+      font-size: 0.8rem;
+    }
+    
+    .navbar .add-sec {
+      font-size: 0.95rem;
+    }
+    
+    .nav-search {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .search-select,
+    .search-icon {
+      font-size: 0.9rem;
+    }
+    
+    .hero-section {
+      height: 300px;
+    }
+    
+    .box,
+    .category-box {
+      width: 45%;
+    }
+  }
+  
+  /* Large devices (greater than 992px) */
+  @media (min-width: 993px) {
+    .navbar {
+      justify-content: space-evenly;
+    }
+    
+    .navbar .border {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .navbar .add-first {
+      font-size: 0.85rem;
+    }
+    
+    .navbar .add-sec {
+      font-size: 1rem;
+    }
+    
+    .nav-search {
+      width: 100%;
+      max-width: 620px;
+    }
+    
+    .search-select,
+    .search-icon {
+      font-size: 1rem;
+    }
+    
+    .hero-section {
+      height: 350px;
+    }
+    
+    .box,
+    .category-box {
+      width: 22%;
+    }
+  }
+  
