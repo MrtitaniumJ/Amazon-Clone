@@ -129,6 +129,11 @@ span {
     margin-left: 15px;
 }
 
+.panel-ops a {
+  color: white;
+  text-decoration: none;
+}
+
 .panel-ops {
     width: 70%;
     font-size: 0.85rem;
@@ -137,6 +142,11 @@ span {
 .panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.panel-deals a {
+  color: white;
+  text-decoration: none;
 }
 
 /* hero section */
